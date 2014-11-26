@@ -15,7 +15,23 @@
  */
 
  $white_opaque: rgba(250, 250, 250, .3);
- $dark: #1F7972;
+ $dark: #bc464e;
+
+h1 {
+	color: $dark;
+	text-align: center;
+	font-family: 'Lato', sans-serif;	
+}
+
+hr {
+	width:200px;  
+	text-align: center;
+	color: $dark;
+	border-color: $dark;
+	border-style: solid;
+    border-width: 1px;
+    margin-top: -20px;
+}
 
 * {
 	box-sizing: border-box;
@@ -26,11 +42,11 @@ html {
 
 body {
  	height: 100%;
-  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: #ffffff;
+  background: #ffffff;
+  background: #ffffff;
+  background: #ffffff;
+  background: #ffffff;
   font-family: 'Lato', sans-serif;
 }
 
@@ -47,14 +63,14 @@ body {
 #notice {
 	text-align: center;
 	font-size: 0.6em;
-	color: $dark;
+	color: #bc464e;
 	font-weight: 100;
 }
 
 .container {
 	width: 50%;
 	max-width: 750px;
-	background: $white_opaque;
+	background: rgba(0,0,0,.1);
 	margin: 3em auto 0 auto;
 	border-radius: 7px;
 	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
@@ -67,11 +83,11 @@ body {
 	font-weight: 700;
 	font-size: 2.5rem;
 	text-transform: uppercase;
-	color: white;
+	color: #bc464e;
 	margin: 0;
 	a {
 		text-decoration: none;
-		color: white;
+		color: #bc464e;
 		transition: all .4s ease-in-out;
 		&:hover {
 			opacity: 0.4;
@@ -83,13 +99,13 @@ body {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 0.9em;
-	color: $dark;
+	color: #bc464e;
 	font-weight: 100;
 }
 
 .index_row {
 	padding: 2em;
-	border-bottom: 1px solid rgba(250,250,250, .3);
+	border-bottom: 2px solid rgba(250,250,250, .7);
 	.todo_list_sub_title {
 		margin-bottom: 0;
 	}
@@ -98,13 +114,13 @@ body {
 #todo_items_wrapper {
 	.row {
 		width: 100%;
-		border-top: 1px solid rgba(250,250,250, .3);
-		border-bottom: 1px solid rgba(250,250,250, .3);
+		border-top: 2px solid rgba(250,250,250, .7);
+		border-bottom: 2px solid rgba(250,250,250, .7);
 		.complete {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-right: 1px solid rgba(250,250,250, .3);
+			border-right: 2px solid rgba(250,250,250, .7);
 			padding: 1em 0;
 		}
 		.todo_item {
@@ -113,7 +129,7 @@ body {
 			p {
 				margin: 0;
 				padding: 1em;
-				color: $dark;
+				color: #bc464e;
 				font-weight: 100;
 			}
 		}
@@ -121,14 +137,14 @@ body {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-left: 1px solid rgba(250,250,250, .3);
+			border-left: 2px solid rgba(250,250,250, .7);
 			padding: 1em 0;
 		}
 		i {
-			color: white;
+			color: #bc464e;
 			transition: all .4s ease-in-out;
 			&:hover {
-				color: $dark;
+				color: #000000;
 			}
 		}
 	}
@@ -147,7 +163,7 @@ body {
 			padding: 1em 2em;
 		}
 		input[type="submit"] {
-			background: rgba(250,250,250,.4);
+			background: #bc464e;
 			outline: none;
 			border: none;
 			height: 40px;
@@ -157,7 +173,7 @@ body {
 			transition: all .4s ease-in-out;
 			cursor: pointer;
 			&:hover {
-				background: $dark;
+				background: #000000;
 			}
 		}
 		::-webkit-input-placeholder { color: $dark; }
@@ -171,7 +187,7 @@ body {
 	font-size: 0.8em;
 	color: white;
 	a {
-		color: white;
+		color: black;
 	}
 }
 
@@ -179,7 +195,7 @@ body {
 	padding: 0 5%;
 }
 label {
-	color: $dark;
+	color: #bc464e;
 }
 input[type="text"], textarea {
 	width: 100%;
@@ -196,7 +212,7 @@ textarea {
 	height: 200px;
 }
 input[type="submit"] {
-	background: white;
+	background: #bc464e;
 	outline: none;
 	border: none;
 	height: 40px;
@@ -205,10 +221,10 @@ input[type="submit"] {
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
-	color: $dark;
+	color: #ffffff;
 	&:hover {
-		background: $dark;
+		background: #000000;
 		color: white;
 	}
 }
-::-webkit-input-placeholder { color: $dark; }
+::-webkit-input-placeholder { color: #bc464e; }
