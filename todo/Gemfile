@@ -35,3 +35,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+group :development, :test do
+    gem 'sqlite3' # SQLite3 DB
+end
+
+group :production do
+    gem 'pg' # Postgresql DB
+    gem 'rails_12factor' # Heroku asset handler
+end
